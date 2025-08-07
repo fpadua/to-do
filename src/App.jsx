@@ -33,10 +33,10 @@ function App() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white flex flex-col justify-center items-center">
+    <main className="px-2 min-h-screen bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 text-white flex flex-col justify-center items-center">
       <Header />
       <div className="max-w-2xl w-full p-6 bg-white bg-opacity-10 rounded-lg shadow-lg">
-        <div className="flex flex-row gap-4">
+        <div className="flex md:flex-row flex-col gap-4">
           <Input inputValue={inputValue} setInputValue={setInputValue} handleAddTask={handleAddTask} inputRef={inputRef} />
           <Button handleAddTask={handleAddTask} />
         </div>

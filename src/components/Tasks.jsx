@@ -12,7 +12,7 @@ function Tasks({ tasks, handleToggleTask, handleRemoveTask }) {
             <CheckCircleIcon className={`w-6 h-6 min-w-[1.5rem] min-h-[1.5rem] flex-shrink-0 cursor-pointer ${task.done ? 'text-white/50' : 'text-white'}`}
               onClick={() => handleToggleTask(task.id)}
             />
-            <p className={`break-words whitespace-pre-wrap flex items-center text-wrap leading-tight text-justify ${task.done ? 'line-through text-white/50' : 'text-white'}`}>
+            <p className={`break-words whitespace-pre-wrap flex items-center text-wrap leading-tight ${task.done ? 'line-through text-white/50' : 'text-white'}`}>
               {task.text}
             </p>
           </div>
